@@ -3,7 +3,6 @@
 import json
 import os
 import shutil
-import sys
 import tempfile
 from pathlib import Path
 
@@ -11,15 +10,13 @@ import pytest
 from fastapi.testclient import TestClient
 from httpx import AsyncClient
 
-# Add the project root to Python path for imports
-PROJECT_ROOT = Path(__file__).parent.parent
-sys.path.insert(0, str(PROJECT_ROOT))
-
 from claude_code_api.core.config import settings
 
 # Now import the app and configuration
 from claude_code_api.main import app
 from tests.model_utils import get_test_model_id
+
+PROJECT_ROOT = Path(__file__).parent.parent
 
 
 @pytest.fixture(scope="session", autouse=True)
