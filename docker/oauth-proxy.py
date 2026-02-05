@@ -15,8 +15,7 @@ import asyncio
 import argparse
 import logging
 import sys
-from typing import Dict, Any
-from urllib.parse import urlencode, parse_qs, urlparse
+from typing import Dict
 
 try:
     from aiohttp import web, ClientSession, ClientError
@@ -69,7 +68,7 @@ class OAuthProxy:
                 try:
                     # Forward the callback with all query parameters
                     async with session.get(target_url, params=query_params, timeout=10) as resp:
-                        response_text = await resp.text()
+                        await resp.text()
 
                         logger.info(f"Container response: {resp.status}")
 
