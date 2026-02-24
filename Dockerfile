@@ -38,6 +38,7 @@ ENV PATH="/home/claudeuser/venv/bin:/home/claudeuser/.local/bin:/home/claudeuser
 
 # Copy Claude credentials and create workspace directory
 COPY --chown=claudeuser:claudeuser claudespace/.credentials.json /home/claudeuser/.claude/.credentials.json
+COPY --chown=claudeuser:claudeuser claudespace/.claude.json /home/claudeuser/.claude/.claude.json
 RUN mkdir -p /home/claudeuser/.config/claude /home/claudeuser/app/workspace
 
 EXPOSE 8000

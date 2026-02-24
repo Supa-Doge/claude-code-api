@@ -1,0 +1,70 @@
+{
+  "numStartups": 1,
+  "cachedGrowthBookFeatures": {
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 5000,
+      "maxExportBatchSize": 200,
+      "maxQueueSize": 8192
+    },
+    "tengu_mcp_tool_search": false,
+    "tengu_scratch": false,
+    "tengu_brass_pebble": false,
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_event_sampling_config": {},
+    "tengu_tool_pear": false,
+    "tengu_log_segment_events": false,
+    "tengu_log_datadog_events": true,
+    "tengu_keybinding_customization": false,
+    "tengu_c4w_usage_limit_notifications_enabled": true,
+    "tengu_thinkback": false,
+    "tengu-top-of-feed-tip": {
+      "tip": "",
+      "color": ""
+    },
+    "tengu_react_vulnerability_warning": false,
+    "tengu_code_diff_cli": true,
+    "tengu_post_compact_survey": false,
+    "tengu_claudeai_mcp_connectors": false
+  },
+  "userID": "abe0fd37597e2617ebee8e7d7ea04e1ac6fd3e5cf86a9c61000247635ce75933",
+  "firstStartTime": "2026-01-25T11:14:18.372Z",
+  "sonnet45MigrationComplete": true,
+  "opus45MigrationComplete": true,
+  "opusProMigrationComplete": true,
+  "thinkingMigrationComplete": true,
+  "cachedChromeExtensionInstalled": false,
+  "changelogLastFetched": 1769339658623,
+  "oauthAccount": {
+    "accountUuid": "9591f259-fb4f-4254-98f1-e1d52f285737",
+    "emailAddress": "stepan.14041999@gmail.com",
+    "organizationUuid": "e2f21b3c-38f0-4435-81af-778317c69b78",
+    "hasExtraUsageEnabled": false,
+    "displayName": "Stepan",
+    "organizationRole": "admin",
+    "workspaceRole": null,
+    "organizationName": "stepan.14041999@gmail.com's Organization"
+  },
+  "claudeCodeFirstTokenDate": "2026-01-24T14:57:19.258423Z",
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.1.19",
+  "lastReleaseNotesSeen": "2.1.19",
+  "projects": {
+    "C:/Users/Stepa": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": []
+    }
+  },
+  "hasShownOpus45Notice": {
+    "e2f21b3c-38f0-4435-81af-778317c69b78": true
+  },
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": true
+}
