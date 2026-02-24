@@ -1,0 +1,24 @@
+name: Notify Push
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+  DISCORD_USERNAME: Deploy Cat
+
+jobs:
+  notify:
+    name: Notify push
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ilshidur/action-discord@0.3.2
+        name: Discord notification
+        with:
+          args: |
+            📦 Claude Code API Deployed!
+            > Commit: [${{ github.sha }}](https://github.com/${{ github.repository }}/commit/${{ github.sha }})
+            > Branch: `${{ github.ref_name }}`
+            > ${{ github.event.head_commit.message }}
