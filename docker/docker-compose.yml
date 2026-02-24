@@ -21,7 +21,7 @@ services:
       # Mount workspace for persistent projects
       - ../workspace:/home/claudeuser/app/workspace
       # Mount local Claude auth (Claude Max / Claude Code)
-      - ${HOME}/.claude:/home/claudeuser/.claude
+      - C:/Users/Stepa/.claude:/home/claudeuser/.claude
       # Mount Claude config to persist authentication
       - ../claude-config:/home/claudeuser/.config/claude
       # Optional: Mount custom config

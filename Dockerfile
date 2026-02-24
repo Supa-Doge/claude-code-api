@@ -36,7 +36,8 @@ RUN python3 -m venv /home/claudeuser/venv && \
 
 ENV PATH="/home/claudeuser/venv/bin:/home/claudeuser/.local/bin:/home/claudeuser/.bun/bin:${PATH}"
 
-# Create Claude config and workspace directories
+# Copy Claude credentials and create workspace directory
+COPY --chown=claudeuser:claudeuser claudespace/.credentials.json /home/claudeuser/.claude/.credentials.json
 RUN mkdir -p /home/claudeuser/.config/claude /home/claudeuser/app/workspace
 
 EXPOSE 8000
